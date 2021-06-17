@@ -1,12 +1,12 @@
 package jogo.xadrez;
 
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class JogoXadrez {
 
     public static void main(String[] args) {
-        Position pos = new Position(3, 5);
-        System.out.println(pos);
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 
 }
